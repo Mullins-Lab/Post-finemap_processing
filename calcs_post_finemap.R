@@ -71,15 +71,7 @@ test %>%
   write_tsv(., file = file.path(paste(finemap_files[i],"_filt_process_095.tsv")))
 }
   
-   
-
-   
-   
-   
  
-  
-  
-  
   
   
   
