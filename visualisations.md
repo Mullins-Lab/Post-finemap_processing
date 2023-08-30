@@ -1,7 +1,9 @@
-#code for creating graphs
-##please change the paths accordingly
+## Rcode for graphs to visualize finemapping results
+
+##change the paths accordingly
 
 ##step 1.
+
 ##distribution of multiple unique credible sets per locus (careful! it could be multiple ones) per SNP size
 
 ```
@@ -64,8 +66,11 @@ group.colors <- c("size_1"= "#F8766D", "size_2-5" = "#B79F00", "size_6-10"= "#00
 ```   
    
  ##step 2.
+ 
  ##code borrowed by Ashvin Ravi (Raj Lab)
+
  ##smallest CS per locus for all fine-mapping methods given a certain LD panel and windows range
+
 ```
 library(ggplot2)
 library(dplyr)
@@ -216,7 +221,9 @@ CS_graph_0.1 <- ggpubr::ggarrange(finemap_credible_sets_0.1, polyfun_finemap_cre
 ```
 
 ##step 3.
-##heatmap as in Figure 3 of the fine-mapping paper
+
+##heatmap as in PGC3 BIP finemapping paper
+
 ```
 dat <- read_csv('~/Desktop/scripts/visualisation/heatmap_apr23.csv')
 dat$variables = dat$`Genetic ID`
