@@ -1,4 +1,4 @@
-# Rscripts and Rcode for finemapping output processing
+# Rscripts and Rcode for processing the finemapping outputs 
 
 ## Standard filtering procedure from Polyfun outputs
 
