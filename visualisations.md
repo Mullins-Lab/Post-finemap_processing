@@ -2,8 +2,9 @@
 ##please change the paths accordingly
 
 ##step 1.
-##distribution of many unique credible sets per locus (careful! it could be multiple ones) per SNP size
+##distribution of multiple unique credible sets per locus (careful! it could be multiple ones) per SNP size
 
+```
 dat_new <- read_csv('/Users/koromm03/Downloads/snakemake_finemap_pgc3_bip/processing/sizeCS/polyfun_finemap_HRC_windows_sizeCS.csv')
 dat2 <- dat_new[!(is.na(dat_new$locus)),]
 
@@ -60,12 +61,12 @@ group.colors <- c("size_1"= "#F8766D", "size_2-5" = "#B79F00", "size_6-10"= "#00
     geom_text(aes(label = paste0(finemap_loci)), 
               position = position_stack(vjust = 0.5)) + labs(x="", y= "N of finemapped loci") +
    scale_fill_manual(values=group.colors) + coord_flip()
-   
+```   
    
  ##step 2.
  ##code borrowed by Ashvin Ravi (Raj Lab)
  ##smallest CS per locus for all fine-mapping methods given a certain LD panel and windows range
-
+```
 library(ggplot2)
 library(dplyr)
 library(tidyverse)
@@ -212,11 +213,11 @@ polyfun_susie_credible_sets_0.1 <- credible_set_graph(polyfun_susie_results, 'Po
 susie_ld_gwas_credible_sets_0.1 <- credible_set_graph(susie_ld_gwas, 'SuSiE + GWAS LD', 0.1)
 
 CS_graph_0.1 <- ggpubr::ggarrange(finemap_credible_sets_0.1, polyfun_finemap_credible_sets_0.1, susie_credible_sets_0.1, polyfun_susie_credible_sets_0.1, susie_ld_gwas_credible_sets_0.1, ncol=1, nrow=5, common.legend = TRUE, legend="right")
-
+```
 
 ##step 3.
 ##heatmap as in Figure 3 of the fine-mapping paper
-
+```
 dat <- read_csv('~/Desktop/scripts/visualisation/heatmap_apr23.csv')
 dat$variables = dat$`Genetic ID`
 dat$`Genetic ID` = NULL
@@ -439,7 +440,7 @@ FURIN_abc_graph <- ggplot() + ggbio::geom_arch(data = FURIN_ABC_enhancers,
 FURIN_plot <- gene_plot(15,91375000, 91475000)
 
 FURIN <- cowplot::plot_grid(FURIN_gwas_plot, FURIN_finemap_plot, FURIN_finemap_plot2, FURIN_finemap_plot3, FURIN_finemap_plot4, a, b, FURIN_abc_graph, FURIN_plot, align='v', nrow=9, rel_heights = c(1,.5,.5,.5,.5,.5,.5,.6,1.2))
-
+```
 
 
 
