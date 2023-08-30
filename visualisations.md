@@ -4,7 +4,7 @@
 
 ##step 1.
 
-##distribution of multiple unique credible sets per locus (careful! it could be multiple ones) per SNP size
+### distribution of multiple unique credible sets per locus (careful! it could be multiple ones) per SNP size
 
 ```
 dat_new <- read_csv('/Users/koromm03/Downloads/snakemake_finemap_pgc3_bip/processing/sizeCS/polyfun_finemap_HRC_windows_sizeCS.csv')
@@ -69,7 +69,7 @@ group.colors <- c("size_1"= "#F8766D", "size_2-5" = "#B79F00", "size_6-10"= "#00
  
  ##code borrowed by Ashvin Ravi (Raj Lab)
 
- ##smallest CS per locus for all fine-mapping methods given a certain LD panel and windows range
+ ### smallest CS per locus for all fine-mapping methods given a certain LD panel and windows range
 
 ```
 library(ggplot2)
@@ -222,7 +222,7 @@ CS_graph_0.1 <- ggpubr::ggarrange(finemap_credible_sets_0.1, polyfun_finemap_cre
 
 ##step 3.
 
-##heatmap as in PGC3 BIP finemapping paper
+### heatmap as in PGC3 BIP finemapping paper
 
 ```
 dat <- read_csv('~/Desktop/scripts/visualisation/heatmap_apr23.csv')
@@ -245,11 +245,13 @@ p <- test %>% mutate(variables = fct_relevel(variables, "Astrocyte Enhancers", "
   geom_tile(aes(fill = Value), colour = "grey50") + theme(axis.text.y = element_text(size = 9)) +
   theme(axis.text.x = element_text(size = 9, angle = 25, hjust = 1)) + ylab("Union Consensus SNPs") + xlab("") +
   theme(legend.title=element_blank()) + scale_fill_gradient2(na.value= "grey70")
-  
+```  
   
 ##step 4.
-##locus plots ~ case example for FURIN
 
+### locus plots ~ case example for FURIN
+
+```
 library(readr)
 library(ggbio)
 library(ggplot2)
