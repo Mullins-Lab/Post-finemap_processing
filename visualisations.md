@@ -1,8 +1,8 @@
 ## Rcode for graphs to visualize finemapping results
 
-##change the paths accordingly
+Please change the file paths accordingly
 
-##step 1.
+Step 1.
 
 ### distribution of multiple unique credible sets per locus (careful! it could be multiple ones) per SNP size
 
@@ -65,9 +65,9 @@ group.colors <- c("size_1"= "#F8766D", "size_2-5" = "#B79F00", "size_6-10"= "#00
    scale_fill_manual(values=group.colors) + coord_flip()
 ```   
    
- ##step 2.
+Step 2.
  
- ##code borrowed by Ashvin Ravi (Raj Lab)
+Code borrowed by Ashvin Ravi (Raj Lab)
 
  ### smallest CS per locus for all fine-mapping methods given a certain LD panel and windows range
 
@@ -247,7 +247,7 @@ p <- test %>% mutate(variables = fct_relevel(variables, "Astrocyte Enhancers", "
   theme(legend.title=element_blank()) + scale_fill_gradient2(na.value= "grey70")
 ```  
   
-##step 4.
+Step 4.
 
 ### locus plots ~ case example for FURIN
 
