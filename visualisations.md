@@ -2,9 +2,9 @@
 
 Please change the file paths accordingly
 
-Step 1.
+### Step 1.
 
-### distribution of multiple unique credible sets per locus (careful! it could be multiple ones) per SNP size
+#### distribution of multiple unique credible sets per locus (careful! it could be multiple ones) per SNP size
 
 ```
 dat_new <- read_csv('/Users/koromm03/Downloads/snakemake_finemap_pgc3_bip/processing/sizeCS/polyfun_finemap_HRC_windows_sizeCS.csv')
@@ -65,11 +65,11 @@ group.colors <- c("size_1"= "#F8766D", "size_2-5" = "#B79F00", "size_6-10"= "#00
    scale_fill_manual(values=group.colors) + coord_flip()
 ```   
    
-Step 2.
+### Step 2.
  
 Code borrowed by Ashvin Ravi (Raj Lab)
 
- ### smallest CS per locus for all fine-mapping methods given a certain LD panel and windows range
+ #### smallest CS per locus for all fine-mapping methods given a certain LD panel and windows range
 
 ```
 library(ggplot2)
@@ -220,9 +220,9 @@ susie_ld_gwas_credible_sets_0.1 <- credible_set_graph(susie_ld_gwas, 'SuSiE + GW
 CS_graph_0.1 <- ggpubr::ggarrange(finemap_credible_sets_0.1, polyfun_finemap_credible_sets_0.1, susie_credible_sets_0.1, polyfun_susie_credible_sets_0.1, susie_ld_gwas_credible_sets_0.1, ncol=1, nrow=5, common.legend = TRUE, legend="right")
 ```
 
-##step 3.
+### Step 3.
 
-### heatmap as in PGC3 BIP finemapping paper
+#### heatmap as in PGC3 BIP finemapping paper
 
 ```
 dat <- read_csv('~/Desktop/scripts/visualisation/heatmap_apr23.csv')
@@ -247,9 +247,9 @@ p <- test %>% mutate(variables = fct_relevel(variables, "Astrocyte Enhancers", "
   theme(legend.title=element_blank()) + scale_fill_gradient2(na.value= "grey70")
 ```  
   
-Step 4.
+### Step 4.
 
-### locus plots ~ case example for FURIN
+#### locus plots ~ case example for FURIN
 
 ```
 library(readr)
