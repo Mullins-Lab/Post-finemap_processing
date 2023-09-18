@@ -23,7 +23,7 @@ write_csv(df, file='/Users/koromm03/Downloads/polyfun_finemap_UKB_finemap/daner_
 
 ## step 2.
 ### count the size of CSs per each finemapped locus
-##input is a merged df with all finemapping results from step 1.
+The input is a merged dataframe with all finemapping results from step 1.
 
 ```
 library(ggplot2)
@@ -69,7 +69,7 @@ test <- dat %>%
 
 
 test %>% 
-  pivot_wider(names_from = pip, values_from = pip) %>%
+  #pivot_wider(names_from = pip, values_from = pip) %>%
   write_tsv(., file = file.path(paste(finemap_files[i],"_filt_process_095.tsv")))
 }
 ```
