@@ -48,7 +48,7 @@ test %>%
  ``` 
   
 ## step 3.
-### creat filtered results (subsetting SNPs per PIP and if within credible sets)
+### create filtered results (subsetting SNPs per PIP and if within credible sets)
 
 ```
 library(tidyverse)
