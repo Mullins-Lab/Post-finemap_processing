@@ -4,7 +4,7 @@ Please change the file paths accordingly
 
 ### Step 1.
 
-#### distribution of multiple unique credible sets per locus (careful! it could be multiple ones) per SNP size
+#### distribution of unique credible sets per locus (careful! it could be multiple ones) per SNP size
 
 ```
 dat_new <- read_csv('/Users/koromm03/Downloads/snakemake_finemap_pgc3_bip/processing/sizeCS/polyfun_finemap_HRC_windows_sizeCS.csv')
