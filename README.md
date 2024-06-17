@@ -1,4 +1,3 @@
 ### Rscripts for processing and visualising fine-mapping results 
 
-This will be part of the Snakemake pipeline but it requires extensive fine-tuning and debugging.
-In the meantime, I am providing all the code here which takes as an input the finemapping jobs from Polyfun.
+Customized Rcode to produce the visuals for the PGC3 BD fine-mapping [preprint](https://www.medrxiv.org/content/10.1101/2024.02.12.24302716v1).
