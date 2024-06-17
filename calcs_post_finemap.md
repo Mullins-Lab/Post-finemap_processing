@@ -1,6 +1,7 @@
-##amend the paths accordingly; paths below are indicative
-##input for step 1) are all the .gz files from running fine-mapping through the polyfun wrapper
-##input for step 2) and 3) are the outputted merged dataframes from step 1).
+#### Make sure to the paths accordingly; paths below are indicative
+Input for step 1) are all the .gz files from running fine-mapping through the polyfun wrapper
+
+Input for step 2) and 3) are the outputted merged dataframes from step 1).
 
 ## step 1.
 ### merge all individual fine-mapping jobs per datasets into one file and add a LOCUS column
