@@ -1,6 +1,8 @@
-##input is a dataframe in which each column is a different fine-mapping method in the format (LD panel.window.method) and each column contains the fine-mapped sig SNPs (pip > 0.5 and parts of a 95% credible set).
-##all code below is in R.
-##order of columns can differ either to assess a given method & window across LD panels, or different fine-mapping methods within a given LD ref panel & window.
+Input is a dataframe in which each column is a different fine-mapping method in the format (LD panel.window.method) and each column contains the fine-mapped sig SNPs (pip > 0.5 and parts of a 95% credible set).
+
+All code below is in R.
+
+The order of columns can differ either to assess a given method & window across LD panels, or different fine-mapping methods within a given LD ref panel & window.
 
 ## 1.COMBINED HEATMAP FOR 32 FINEMAPPING APPROACHES
 
