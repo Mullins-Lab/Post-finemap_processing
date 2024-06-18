@@ -3,7 +3,7 @@ Input for step 1) are all the .gz files from running Polyfun-based fine-mapping.
 
 Input for step 2) and 3) are the outputted merged dataframes from step 1).
 
-## step 1.
+### Step 1.
 ### merge all individual fine-mapping jobs per datasets into one file and add a LOCUS column
 
 ```
@@ -24,7 +24,7 @@ for (file in files){
 write_csv(df, file='/Users/koromm03/Downloads/polyfun_finemap_UKB_finemap/daner_bip_pgc3_polyfun_finemap.merged.csv')
 ```
 
-## step 2.
+### Step 2.
 ### count the size of CSs per each finemapped locus
 The input is a merged dataframe with all finemapping results from step 1.
 
@@ -50,7 +50,7 @@ test %>%
   write_csv(., "~/Downloads/test.csv")
  ``` 
   
-## step 3.
+### Step 3.
 ### create filtered results (subsetting SNPs per PIP and if within credible sets)
 
 ```
