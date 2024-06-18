@@ -8,7 +8,7 @@ Input for step 2) are the output .gz files from Polyfun-based fine-mapping.
 
 Input for step 3) is a dataframe in which the rows include the evidence fromt all different assessed variables (pLI, SMR results etc) and columsn are the union consensus SNPs.
 
-Input for step 4) are the merged dataframes from step 1) of the [calcs_post_finemap.md](https://github.com/Mullins-Lab/Post-finemap_processing/blob/main/calcs_post_finemap.md), the GWAS sumstats, and a files with the epigenomics annotations in a binary form (overlapping in epigenetic regions or not, '1' or '0' as in yes or 'no').
+Inputs for step 4) include the merged dataframes from step 1) of the [calcs_post_finemap.md](https://github.com/Mullins-Lab/Post-finemap_processing/blob/main/calcs_post_finemap.md), the GWAS sumstats, and a file with the epigenomics annotations in a binary form (overlapping in epigenetic regions or not, '1' or '0' as in yes or 'no').
 
 ### Step 1.
 
