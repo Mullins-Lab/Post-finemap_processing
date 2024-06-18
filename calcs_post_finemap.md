@@ -1,5 +1,5 @@
 #### Make sure to the paths accordingly; paths below are indicative
-Input for step 1) are all the .gz files from running fine-mapping through the polyfun wrapper
+Input for step 1) are all the .gz files from running Polyfun-based fine-mapping.
 
 Input for step 2) and 3) are the outputted merged dataframes from step 1).
 
