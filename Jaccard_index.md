@@ -4,7 +4,7 @@ All code below is in R.
 
 The order of columns can differ either to assess a given method & window across LD panels, or different fine-mapping methods within a given LD ref panel & window.
 
-### 1.COMBINED HEATMAP FOR 32 FINEMAPPING APPROACHES
+### 1. COMBINED HEATMAP FOR 32 FINEMAPPING APPROACHES
 
 ```
 library(dplyr)
@@ -63,7 +63,7 @@ print(heatmap)
 ```
 
 
-### 2.CALCULATE MEAN JACCARD INDEX ACROSS ALL ANALYSES
+### 2. CALCULATE MEAN JACCARD INDEX ACROSS ALL ANALYSES
 
 ```
 library(dplyr)
@@ -97,7 +97,7 @@ print(paste("Mean Jaccard Index:", mean_jaccard))
 
 ```
 
-### 3.CALCULATE MEAN JACCARD INDEX PER EACH FINEMAPPING APPROACH
+### 3. CALCULATE MEAN JACCARD INDEX PER EACH FINEMAPPING APPROACH
 
 ```
 library(dplyr)
