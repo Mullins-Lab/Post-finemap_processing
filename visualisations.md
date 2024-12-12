@@ -77,7 +77,7 @@ group.colors <- c("size_1"= "#F8766D", "size_2-5" = "#B79F00", "size_6-10"= "#00
  
 Code borrowed by Ashvin Ravi (Raj Lab)
 
- #### smallest CS per locus for all fine-mapping methods given a certain LD panel and windows range
+#### smallest CS per locus for all fine-mapping methods given a certain LD panel and windows range
 
 ```
 library(ggplot2)
@@ -256,6 +256,8 @@ p <- test %>% mutate(variables = fct_relevel(variables, "Astrocyte Enhancers", "
 ```  
   
 ### Step 4.
+
+Code borrowed by Ashvin Ravi (Raj Lab)
 
 #### locus plots ~ case example for FURIN
 
