@@ -1,4 +1,4 @@
-### Make sure to the paths accordingly; paths below are indicative
+### Make sure to the paths accordingly; paths below are indicative.
 
 Input for step 1) are all the .gz files from running Polyfun-based fine-mapping. <br> 
 Input for step 2) and 3) are the outputted merged dataframes from step 1).
@@ -6,7 +6,7 @@ Input for step 2) and 3) are the outputted merged dataframes from step 1).
 ---
 
 ### Step 1.
-### Merge all individual fine-mapping jobs per datasets into one file and add a LOCUS column
+### Merge all individual fine-mapping jobs per datasets into one file and add a LOCUS column.
 
 ```
 files <- list.files(path="/Users/koromm03/Downloads/polyfun_finemap_UKB_finemap/", pattern="daner_bip_pgc3_finemap_finemap.*.gz", full.names=TRUE, recursive=FALSE)
@@ -29,7 +29,8 @@ write_csv(df, file='/Users/koromm03/Downloads/polyfun_finemap_UKB_finemap/daner_
 ---
 
 ### Step 2.
-### Count the size of CSs per each finemapped locus
+### Count the size of CSs per each finemapped locus.
+
 The input is a merged dataframe with all finemapping results from step 1.
 
 ```
@@ -57,7 +58,7 @@ test %>%
 ---
 
 ### Step 3.
-### Create filtered results (subsetting SNPs per PIP and if within credible sets)
+### Create filtered results (subsetting SNPs per PIP and if within credible sets).
 
 ```
 library(tidyverse)
