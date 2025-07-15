@@ -10,6 +10,8 @@ Input for step 3) is a dataframe in which the rows include the evidence with reg
 
 Inputs for step 4) include the merged dataframes from step 1) of the [calcs_post_finemap.md](https://github.com/Mullins-Lab/Post-finemap_processing/blob/main/calcs_post_finemap.md), the GWAS sumstats, and a file with the epigenomics annotations in a binary form (overlap in epigenetic regions: '1' or '0' as in yes or 'no').
 
+---
+
 ### Step 1.
 
 #### distribution of unique credible sets per locus (careful! it could be multiple ones) per SNP size
@@ -72,6 +74,8 @@ group.colors <- c("size_1"= "#F8766D", "size_2-5" = "#B79F00", "size_6-10"= "#00
               position = position_stack(vjust = 0.5)) + labs(x="", y= "N of finemapped loci") +
    scale_fill_manual(values=group.colors) + coord_flip()
 ```   
+
+---
    
 ### Step 2.
  
@@ -228,6 +232,8 @@ susie_ld_gwas_credible_sets_0.1 <- credible_set_graph(susie_ld_gwas, 'SuSiE + GW
 CS_graph_0.1 <- ggpubr::ggarrange(finemap_credible_sets_0.1, polyfun_finemap_credible_sets_0.1, susie_credible_sets_0.1, polyfun_susie_credible_sets_0.1, susie_ld_gwas_credible_sets_0.1, ncol=1, nrow=5, common.legend = TRUE, legend="right")
 ```
 
+---
+
 ### Step 3.
 
 #### heatmap as in PGC3 BIP finemapping paper
@@ -253,8 +259,10 @@ p <- test %>% mutate(variables = fct_relevel(variables, "Astrocyte Enhancers", "
   geom_tile(aes(fill = Value), colour = "grey50") + theme(axis.text.y = element_text(size = 9)) +
   theme(axis.text.x = element_text(size = 9, angle = 25, hjust = 1)) + ylab("Union Consensus SNPs") + xlab("") +
   theme(legend.title=element_blank()) + scale_fill_gradient2(na.value= "grey70")
-```  
-  
+```
+
+---  
+
 ### Step 4.
 
 Code borrowed by Ashvin Ravi (Raj Lab)
@@ -460,6 +468,8 @@ FURIN_plot <- gene_plot(15,91375000, 91475000)
 
 FURIN <- cowplot::plot_grid(FURIN_gwas_plot, FURIN_finemap_plot, FURIN_finemap_plot2, FURIN_finemap_plot3, FURIN_finemap_plot4, a, b, FURIN_abc_graph, FURIN_plot, align='v', nrow=9, rel_heights = c(1,.5,.5,.5,.5,.5,.5,.6,1.2))
 ```
+
+---
 
 
 
